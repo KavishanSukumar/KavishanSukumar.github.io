@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/personal_portfolio/static/css/main.5f41cb7f.css",
+    "main.js": "/personal_portfolio/static/js/main.ca02b0e6.js",
+    "static/media/me-4.webp": "/personal_portfolio/static/media/me-4.d75bbd2d9c933cd03ffa.webp",
+    "static/media/con360.webp": "/personal_portfolio/static/media/con360.5981a7bbcd6f3d038c27.webp",
+    "static/media/cv.pdf": "/personal_portfolio/static/media/cv.adbfbd373b2aa91198f4.pdf",
+    "static/media/entero.webp": "/personal_portfolio/static/media/entero.1b7dcaa2487dd502726d.webp",
+    "static/media/logo.webp": "/personal_portfolio/static/media/logo.bb9f7b34c94044d67f57.webp",
+    "static/media/Nocturne.webp": "/personal_portfolio/static/media/Nocturne.dac8090d6db0b7c16282.webp",
+    "static/media/me-5.webp": "/personal_portfolio/static/media/me-5.c134e735af6b82d80f1a.webp",
+    "index.html": "/personal_portfolio/index.html",
+    "main.5f41cb7f.css.map": "/personal_portfolio/static/css/main.5f41cb7f.css.map",
+    "main.ca02b0e6.js.map": "/personal_portfolio/static/js/main.ca02b0e6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5f41cb7f.css",
+    "static/js/main.ca02b0e6.js"
+  ]
+}
