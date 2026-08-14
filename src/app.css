@@ -1,0 +1,26 @@
+/* ======================================================
+   PORTFOLIO CONTENT WRAPPER
+   Applies page-level padding across content sections
+   while leaving Header & Footer unpadded (full width).
+   ====================================================== */
+
+.portfolio__content {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 3rem;
+    box-sizing: border-box;
+}
+
+/* Tablet screens */
+@media screen and (max-width: 1024px) {
+    .portfolio__content {
+        padding: 0 2rem;
+    }
+}
+
+/* Mobile screens */
+@media screen and (max-width: 600px) {
+    .portfolio__content {
+        padding: 0 1rem;
+    }
+}

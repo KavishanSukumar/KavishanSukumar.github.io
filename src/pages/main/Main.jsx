@@ -14,12 +14,14 @@ export default function Portfolio() {
     <>
       <Header />
       <Nav />
-      <About />
-      <Research />
-      <WorkHistory />
-      <TechnicalSkills />
-      <Projects />
-      <Contact />
+      <main className="portfolio__content">
+        <About />
+        <Research />
+        <WorkHistory />
+        <TechnicalSkills />
+        <Projects />
+        <Contact />
+      </main>
       <Footer />
     </>
   );
