@@ -1,59 +1,133 @@
+/* =====================================================================
+   FOOTER
+   ===================================================================== */
+
 footer {
     background: var(--color-primary);
-    padding: 3rem 0;
+    padding: 3rem 0 2rem;
     text-align: center;
     font-size: 0.9rem;
+    margin-top: 8rem;
 }
 
 footer a {
     color: var(--color-bg);
+    font-weight: 500;
 }
 
-.footer__logo-image {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 1rem;
+footer a:hover {
+    color: var(--color-bg-variant);
+}
+
+/* Logo */
+.footer__logo {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
     display: inline-block;
 }
 
+.footer__logo-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    display: inline-block;
+    object-fit: cover;
+}
+
+/* Nav links */
 .permalinks {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 0 auto 3rem;
-    gap: 2rem;
+    margin: 0 auto 2rem;
+    gap: 1.5rem;
+    font-size: 0.85rem;
 }
 
+/* "Home" scroll button — matches anchor link style */
+.footer__nav-home {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--color-bg);
+    padding: 0;
+    transition: var(--transition);
+}
+
+.footer__nav-home:hover {
+    color: var(--color-bg-variant);
+}
+
+/* Social icons */
 .footer__socials {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
 }
 
 .footer__socials a {
     background: var(--color-bg);
     color: var(--color-white);
-    padding: 0.8rem;
-    border-radius: 0.7rem;
+    padding: 0.75rem;
+    border-radius: 0.6rem;
     display: flex;
     border: 1px solid transparent;
     transition: var(--transition);
+    font-size: 1rem;
 }
 
 .footer__socials a:hover {
     background: transparent;
     color: var(--color-bg);
     border-color: var(--color-bg);
+    transform: translateY(-2px);
 }
 
-/* =====================MEDIA QUERIES (SD)===================== */
+/* Meta / tagline / copyright */
+.footer__meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(19, 19, 43, 0.15);
+}
+
+.footer__tagline {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--color-bg);
+    letter-spacing: 0.02em;
+}
+
+.footer__availability {
+    font-size: 0.75rem;
+    color: rgba(19, 19, 43, 0.65);
+}
+
+.footer__copy {
+    font-size: 0.72rem;
+    color: rgba(19, 19, 43, 0.5);
+    margin-top: 0.2rem;
+}
+
+/* =====================================================================
+   MEDIA QUERIES — SMALL (≤ 600px)
+   ===================================================================== */
+
 @media screen and (max-width: 600px) {
     .permalinks {
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 1rem;
     }
 
-
+    footer {
+        margin-top: 4rem;
+    }
 }

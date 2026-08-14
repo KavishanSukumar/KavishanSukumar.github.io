@@ -41,5 +41,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "ajv": "^8.20.0",
+    "ajv-keywords": "^5.1.0",
+    "sharp": "^0.35.3"
   }
 }

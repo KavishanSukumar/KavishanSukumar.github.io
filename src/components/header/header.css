@@ -1,25 +1,135 @@
+/* =====================================================================
+   HEADER — Premium Hero
+   ===================================================================== */
+
 header {
     height: 100vh;
-    padding: 7rem;
+    padding-top: 7rem;
     overflow: hidden;
-
 }
 
 .header_container {
     text-align: center;
     height: 100%;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* ======================CTA====================== */
+/* =====================================================================
+   TYPOGRAPHY — Hero Hierarchy
+   ===================================================================== */
+
+.header_container h5 {
+    color: var(--color-light);
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+}
+
+.header_container h1 {
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    color: var(--color-white);
+    margin-bottom: 0.4rem;
+}
+
+.header__role {
+    font-size: 1rem !important;
+    color: var(--color-primary) !important;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: none !important;
+}
+
+.header__subtitle {
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+    color: var(--color-light);
+    opacity: 0.7;
+    margin-top: 0.25rem;
+    font-weight: 400;
+}
+
+/* =====================================================================
+   IEEE BADGE
+   ===================================================================== */
+
+.header__badges {
+    display: flex;
+    gap: 0.6rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem 0 0.6rem;
+}
+
+.header__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.3rem 0.85rem;
+    border-radius: 0.35rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: var(--transition);
+}
+
+.header__badge--ieee {
+    background: var(--color-gold-bg);
+    border: 1px solid var(--color-gold-border);
+    color: var(--color-gold);
+}
+
+.header__badge--ieee:hover {
+    background: rgba(240, 192, 64, 0.22);
+}
+
+/* =====================================================================
+   VALUE PROPOSITION & AVAILABILITY
+   ===================================================================== */
+
+.header__value-prop {
+    font-size: 0.82rem;
+    color: var(--color-light);
+    max-width: 36rem;
+    line-height: 1.65;
+    margin: 0.5rem auto 0.4rem;
+    font-weight: 400;
+}
+
+.header__availability {
+    font-size: 0.72rem;
+    color: rgba(255, 255, 255, 0.4);
+    letter-spacing: 0.05em;
+    margin-bottom: 0.4rem;
+}
+
+.header__availability span {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+/* =====================================================================
+   CTA BUTTONS
+   ===================================================================== */
+
 .cta {
-    margin-top: 2.5rem;
+    margin-top: 1.4rem;
     display: flex;
     gap: 1.2rem;
     justify-content: center;
 }
 
-/* ======================SOCIALS===================== */
+/* =====================================================================
+   SOCIAL LINKS
+   ===================================================================== */
 
 .header__socials {
     display: flex;
@@ -31,28 +141,52 @@ header {
     bottom: 3rem;
 }
 
+.header__socials a {
+    font-size: 1.1rem;
+    color: var(--color-light);
+    transition: var(--transition);
+}
+
+.header__socials a:hover {
+    color: var(--color-primary);
+    transform: translateY(-2px);
+}
+
 .header__socials::after {
     content: '';
     width: 1px;
     height: 2rem;
-    background-color: var(--color-primary);
+    background: linear-gradient(transparent, var(--color-primary));
 }
 
-/* ======================ME===================== */
+/* =====================================================================
+   PORTRAIT PHOTO
+   ===================================================================== */
 
 .me {
-    background: linear-gradient(var(--color-primary), transparent);
-    width: 20rem;
-    height: 30rem;
-    position: absolute;
-    left: calc(50% - 10rem);
-    margin-top: 4rem;
+    background: linear-gradient(180deg, var(--color-primary) 0%, transparent 85%);
+    width: 19rem;
+    height: 28rem;
+    position: relative;
+    margin: 4rem auto 0;
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
-    padding: 5rem 1.5rem 1.5rem 1.5rem;
+    padding: 2rem 0 0 0;
+    /* Subtle outer glow */
+    box-shadow: 0 0 60px rgba(75, 213, 255, 0.08);
 }
 
-/* ======================SCROLL DOWN===================== */
+.me img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+}
+
+/* =====================================================================
+   SCROLL DOWN
+   ===================================================================== */
 
 .scroll__down {
     position: absolute;
@@ -60,27 +194,61 @@ header {
     bottom: 5rem;
     transform: rotate(90deg);
     font-weight: 300;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    color: var(--color-light);
+    letter-spacing: 0.08em;
 }
 
-/* =====================MEDIA QUERIES (MD)===================== */
+.scroll__down:hover {
+    color: var(--color-primary);
+}
+
+/* =====================================================================
+   MEDIA QUERIES — MEDIUM (≤ 1024px)
+   ===================================================================== */
+
 @media screen and (max-width: 1024px) {
     header {
-        height: 68vh;
+        height: auto;
+        padding-bottom: 4rem;
     }
 
-
-
+    .me {
+        width: 17rem;
+        height: 26rem;
+        margin-top: 5rem;
+    }
 }
 
-/* =====================MEDIA QUERIES (SD)===================== */
+/* =====================================================================
+   MEDIA QUERIES — SMALL (≤ 600px)
+   ===================================================================== */
+
 @media screen and (max-width: 600px) {
     header {
-        height: 100vh;
+        padding-bottom: 3rem;
     }
 
     .header__socials,
     .scroll__down {
         display: none;
+    }
+
+    .me {
+        position: relative;
+        left: 0;
+        margin: 2rem auto 0;
+        width: 15rem;
+        height: 22rem;
+        padding: 1.5rem 0 0 0;
+    }
+
+    .header__value-prop {
+        font-size: 0.78rem;
+        padding: 0 1rem;
+    }
+
+    .header__badges {
+        margin: 0.7rem 0 0.4rem;
     }
 }

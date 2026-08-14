@@ -37,7 +37,7 @@ const EducationModel = forwardRef((props, ref) => {
                   </small>
                   <small className="text-light">
                     Current GPA&nbsp;
-                    <span style={{ fontWeight: "bold" }}>3.61/4.00</span>
+                    <span style={{ fontWeight: "bold" }}>3.57/4.00</span>
                   </small>
                 </div>
                 <div style={{ textAlign: "right" }}>

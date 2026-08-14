@@ -1,0 +1,157 @@
+/* =====================================================================
+   SKILLS — Container & Grid
+   ===================================================================== */
+
+.skills__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+}
+
+/* =====================================================================
+   SKILL GROUP CARD
+   ===================================================================== */
+
+.skill__group {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 1rem;
+    padding: 1.6rem;
+    transition: var(--transition);
+    box-shadow: var(--shadow-card);
+}
+
+.skill__group:hover {
+    border-color: rgba(75, 213, 255, 0.2);
+    box-shadow: var(--shadow-hover);
+}
+
+.skill__group h3 {
+    font-size: 0.88rem;
+    font-weight: 600;
+    font-family: var(--font-display);
+    color: var(--color-primary);
+    margin-bottom: 1.2rem;
+    letter-spacing: 0.02em;
+}
+
+/* =====================================================================
+   SKILL LIST
+   ===================================================================== */
+
+.skill__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+/* For the simple (no-bar) layout */
+.skill__details {
+    display: grid;
+    grid-template-columns: 1rem auto;
+    gap: 0.6rem;
+    align-items: flex-start;
+}
+
+.skill__details h4 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--color-white);
+    line-height: 1.3;
+}
+
+.skill__details small {
+    font-size: 0.68rem;
+    color: var(--color-light);
+    display: block;
+    margin-top: 0.1rem;
+    line-height: 1.35;
+}
+
+.skill__check-icon {
+    color: var(--color-primary);
+    margin-top: 2px;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+}
+
+/* =====================================================================
+   SKILL BAR VARIANT
+   ===================================================================== */
+
+.skill__list--bars {
+    gap: 1rem;
+}
+
+.skill__details--bar {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    grid-template-columns: unset;
+}
+
+.skill__details-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+.skill__details-left {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.skill__details--bar h4 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--color-white);
+}
+
+.skill__details--bar small {
+    font-size: 0.68rem;
+    color: var(--color-light);
+}
+
+/* Proficiency bar */
+.skill__bar-track {
+    width: 100%;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.skill__bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--color-primary), rgba(75, 213, 255, 0.6));
+    border-radius: 2px;
+}
+
+/* =====================================================================
+   MEDIA QUERIES — MEDIUM (≤ 1024px)
+   ===================================================================== */
+
+@media screen and (max-width: 1024px) {
+    .skills__container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.4rem;
+    }
+}
+
+/* =====================================================================
+   MEDIA QUERIES — SMALL (≤ 600px)
+   ===================================================================== */
+
+@media screen and (max-width: 600px) {
+    .skills__container {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .skill__group {
+        padding: 1.2rem;
+    }
+}

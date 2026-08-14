@@ -1,0 +1,208 @@
+/* =====================================================================
+   RESEARCH & PUBLICATIONS SECTION
+   ===================================================================== */
+
+.research__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* =====================================================================
+   PUBLICATION CARD
+   ===================================================================== */
+
+.research__card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Coloured top accent line per type */
+.research__card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.research__card--ieee::before {
+    background: linear-gradient(90deg, var(--color-gold), rgba(240, 192, 64, 0.3));
+}
+
+.research__card--symposium::before {
+    background: linear-gradient(90deg, var(--color-primary), rgba(75, 213, 255, 0.3));
+}
+
+.research__card:hover {
+    border-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+}
+
+/* =====================================================================
+   CARD — TYPE LABEL
+   ===================================================================== */
+
+.research__card-type {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    color: var(--color-light);
+}
+
+.research__card-type-icon {
+    font-size: 1rem;
+    color: var(--color-light);
+}
+
+/* =====================================================================
+   CARD — CONFERENCE BADGE
+   ===================================================================== */
+
+.research__conference-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: 0.4rem;
+    width: fit-content;
+}
+
+.research__conference-badge--ieee {
+    background: var(--color-gold-bg);
+    border: 1px solid var(--color-gold-border);
+}
+
+.research__conference-badge--symposium {
+    background: var(--color-primary-glow);
+    border: 1px solid var(--color-primary-variant);
+}
+
+.research__conference-name {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+.research__conference-badge--ieee .research__conference-name {
+    color: var(--color-gold);
+}
+
+.research__conference-badge--symposium .research__conference-name {
+    color: var(--color-primary);
+}
+
+.research__conference-year {
+    font-size: 0.7rem;
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+.research__conference-badge--ieee .research__conference-year {
+    color: var(--color-gold);
+}
+
+.research__conference-badge--symposium .research__conference-year {
+    color: var(--color-primary);
+}
+
+/* =====================================================================
+   CARD — PAPER TITLE
+   ===================================================================== */
+
+.research__card-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    font-family: var(--font-display);
+    color: var(--color-white);
+    line-height: 1.45;
+    display: flex;
+    gap: 0.5rem;
+    align-items: flex-start;
+}
+
+.research__title-icon {
+    font-size: 1.1rem;
+    color: var(--color-light);
+    flex-shrink: 0;
+    margin-top: 0.15rem;
+}
+
+/* =====================================================================
+   CARD — INSTITUTION & DESCRIPTION
+   ===================================================================== */
+
+.research__institution {
+    font-size: 0.74rem;
+    color: var(--color-light);
+    font-style: italic;
+    opacity: 0.8;
+    line-height: 1.4;
+}
+
+.research__description {
+    font-size: 0.8rem;
+    color: var(--color-light);
+    line-height: 1.65;
+}
+
+/* =====================================================================
+   CARD — TECH TAGS
+   ===================================================================== */
+
+.research__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.3rem;
+}
+
+.research__tag {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--color-border);
+    color: var(--color-light);
+    font-size: 0.68rem;
+    padding: 0.2rem 0.55rem;
+    border-radius: 0.25rem;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+}
+
+/* =====================================================================
+   MEDIA QUERIES — MEDIUM (≤ 1024px)
+   ===================================================================== */
+
+@media screen and (max-width: 1024px) {
+    .research__container {
+        grid-template-columns: 1fr;
+        max-width: 640px;
+    }
+}
+
+/* =====================================================================
+   MEDIA QUERIES — SMALL (≤ 600px)
+   ===================================================================== */
+
+@media screen and (max-width: 600px) {
+    .research__card {
+        padding: 1.5rem;
+    }
+}

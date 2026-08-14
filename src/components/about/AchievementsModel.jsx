@@ -29,13 +29,26 @@ const AchievementsModel = forwardRef((props, ref) => {
             <h3>Achievements</h3>
             <div className="aboutmecomponent__content">
               <article className="aboutmecomponent__details">
+                <FaArrowAltCircleUp className="aboutmecomponent__details-icon" style={{ color: '#00629B' }} />
+                <div>
+                  <h4>
+                    IEEE IECON 2024 — Industrial Electronics Society
+                  </h4>
+                  <small className="text-light">
+                    Research accepted for presentation at the 50th Annual Conference of the IEEE Industrial Electronics Society (IECON 2024)
+                  </small>
+                </div>
+                <div style={{ textAlign: "right" }}>
+                  <small className="text-light">2024</small>
+                </div>
+              </article>
+              <article className="aboutmecomponent__details">
                 <FaArrowAltCircleUp className="aboutmecomponent__details-icon" />
                 <div>
                   <h4>
-                    Nocturne research abstract was published in the Annual
-                    Research Symposium 2023 organized by the University of
-                    Colombo
+                    Nocturne — Annual Research Symposium 2023
                   </h4>
+                  <small className="text-light">Abstract published at the Annual Research Symposium 2023, University of Colombo</small>
                 </div>
                 <div style={{ textAlign: "right" }}>
                   <small className="text-light">2023</small>

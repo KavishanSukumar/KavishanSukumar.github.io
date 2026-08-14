@@ -2,10 +2,12 @@ import React from "react";
 import Header from "../../components/header/Header";
 import Nav from "../../components/nav/Nav";
 import About from "../../components/about/About";
-import Experience from "../../components/experience/Experience";
+import Research from "../../components/research/Research";
+import WorkHistory from "../../components/workhistory/WorkHistory";
+import TechnicalSkills from "../../components/skills/TechnicalSkills";
+import { Projects } from "../../components/projects/Projects";
 import Contact from "../../components/contact/Contact";
 import Footer from "../../components/footer/Footer";
-import { Projects } from "../../components/projects/Projects";
 
 export default function Portfolio() {
   return (
@@ -13,7 +15,9 @@ export default function Portfolio() {
       <Header />
       <Nav />
       <About />
-      <Experience />
+      <Research />
+      <WorkHistory />
+      <TechnicalSkills />
       <Projects />
       <Contact />
       <Footer />
