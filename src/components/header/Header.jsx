@@ -29,7 +29,7 @@ function Header() {
 
         <p className="header__availability">
           📍 Sri Lanka &nbsp;·&nbsp; Open to relocation&nbsp;—&nbsp;
-          <span>AU</span>&nbsp;·&nbsp;<span>EU</span>&nbsp;·&nbsp;<span>SG</span>&nbsp;·&nbsp;<span>Dubai</span>
+          <span>AU</span>&nbsp;·&nbsp;<span>EU</span>&nbsp;·&nbsp;<span>SG</span>&nbsp;·&nbsp;<span>UAE</span>
         </p>
 
         <CTA />
