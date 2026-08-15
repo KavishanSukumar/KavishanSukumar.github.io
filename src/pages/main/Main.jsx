@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import BackgroundAnimation from "../../components/background/BackgroundAnimation";
 import Header from "../../components/header/Header";
 import Nav from "../../components/nav/Nav";
 import About from "../../components/about/About";
@@ -18,6 +19,7 @@ export default function Portfolio() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
     >
+      <BackgroundAnimation />
       <Header />
       <Nav />
       <main className="portfolio__content">
