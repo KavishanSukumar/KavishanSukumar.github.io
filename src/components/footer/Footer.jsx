@@ -48,7 +48,7 @@ function Footer() {
       <div className="footer__meta">
         <p className="footer__tagline">Senior Software Engineer &nbsp;·&nbsp; Fintech &nbsp;·&nbsp; Capital Markets</p>
         <p className="footer__availability">
-          📍 Sri Lanka &nbsp;·&nbsp; Open to global relocation &nbsp;—&nbsp; AU · EU · SG · Dubai
+          📍 Sri Lanka &nbsp;·&nbsp; Open to global relocation &nbsp;—&nbsp; AU · EU · SG · UAE
         </p>
         <p className="footer__copy">© {new Date().getFullYear()} Sukumar Kavishan. All rights reserved.</p>
       </div>

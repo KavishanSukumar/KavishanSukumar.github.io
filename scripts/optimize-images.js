@@ -14,17 +14,17 @@ const publicDir = path.join(__dirname, '..', 'public');
 // Images to convert to WebP + compress
 const imagesToProcess = [
   // src/assets images
-  { input: path.join(assetsDir, 'me-5.png'),      output: path.join(assetsDir, 'me-5.webp'),      quality: 85 },
-  { input: path.join(assetsDir, 'me-4.jpg'),      output: path.join(assetsDir, 'me-4.webp'),      quality: 82 },
-  { input: path.join(assetsDir, 'me-about.jpg'),  output: path.join(assetsDir, 'me-about.webp'),  quality: 82 },
-  { input: path.join(assetsDir, 'Nocturne.png'),  output: path.join(assetsDir, 'Nocturne.webp'),  quality: 82 },
-  { input: path.join(assetsDir, 'entero.png'),    output: path.join(assetsDir, 'entero.webp'),    quality: 82 },
-  { input: path.join(assetsDir, 'con360.png'),    output: path.join(assetsDir, 'con360.webp'),    quality: 82 },
-  { input: path.join(assetsDir, 'me-3.png'),      output: path.join(assetsDir, 'me-3.webp'),      quality: 82 },
+  { input: path.join(assetsDir, 'me-5.png'), output: path.join(assetsDir, 'me-5.webp'), quality: 85 },
+  { input: path.join(assetsDir, 'me-4.jpg'), output: path.join(assetsDir, 'me-4.webp'), quality: 82 },
+  { input: path.join(assetsDir, 'me-about.jpg'), output: path.join(assetsDir, 'me-about.webp'), quality: 82 },
+  { input: path.join(assetsDir, 'Nocturne.png'), output: path.join(assetsDir, 'Nocturne.webp'), quality: 82 },
+  { input: path.join(assetsDir, 'entero.png'), output: path.join(assetsDir, 'entero.webp'), quality: 82 },
+  { input: path.join(assetsDir, 'con360.png'), output: path.join(assetsDir, 'con360.webp'), quality: 82 },
+  { input: path.join(assetsDir, 'me-3.png'), output: path.join(assetsDir, 'me-3.webp'), quality: 82 },
   // logo compressed PNG (keep as PNG for favicon compatibility, but also make WebP)
-  { input: path.join(assetsDir, 'logo.png'),      output: path.join(assetsDir, 'logo.webp'),      quality: 85 },
+  { input: path.join(assetsDir, 'logo.png'), output: path.join(assetsDir, 'logo.webp'), quality: 85 },
   // public logo
-  { input: path.join(publicDir, 'logo.png'),      output: path.join(publicDir, 'logo.png'),       quality: 85, format: 'png', resize: { width: 512, withoutEnlargement: true } },
+  { input: path.join(publicDir, 'logo.png'), output: path.join(publicDir, 'logo.png'), quality: 85, format: 'png', resize: { width: 512, withoutEnlargement: true } },
 ];
 
 // OG image generation — 1200x630 branded card
@@ -85,7 +85,7 @@ async function processImages() {
         <rect x="80" y="430" width="280" height="42" rx="6" fill="rgba(240,192,64,0.15)" stroke="#f0c040" stroke-width="1"/>
         <text x="170" y="458" font-family="Arial, sans-serif" font-size="18" fill="#f0c040" font-weight="600">IEEE IECON 2024</text>
         <!-- Globe availability -->
-        <text x="80" y="540" font-family="Arial, sans-serif" font-size="20" fill="rgba(255,255,255,0.45)">Open to: Australia · Europe · Singapore · Dubai</text>
+        <text x="80" y="540" font-family="Arial, sans-serif" font-size="20" fill="rgba(255,255,255,0.45)">Open to: Australia · Europe · Singapore · UAE</text>
         <!-- URL -->
         <text x="80" y="590" font-family="Arial, sans-serif" font-size="18" fill="rgba(75,213,255,0.5)">kavishansukumar.web.app</text>
       </svg>
